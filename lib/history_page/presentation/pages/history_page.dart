@@ -34,7 +34,7 @@ class HistoryPage extends StatelessWidget {
                   children: [
                     Text(
                       TimeUtil.getFullDate(catsInfo[index].factDate),
-                      style: TextStyles.forButtons,
+                      style: TextStyles.forDate,
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 10),

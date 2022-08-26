@@ -10,8 +10,9 @@ class TextStyles {
   static const forDate = TextStyle(
     fontSize: 8,
     fontFamily: 'Poppins',
-      fontWeight: FontWeight.bold,
-      letterSpacing: 1
+    fontWeight: FontWeight.bold,
+    letterSpacing: 1,
+    color: AppColors.grey,
   );
 
   static const forFacts = TextStyle(

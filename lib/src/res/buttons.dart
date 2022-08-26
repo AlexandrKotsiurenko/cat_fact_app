@@ -20,6 +20,7 @@ class MainButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
+      borderRadius: BorderRadius.circular(30),
       child: Container(
         decoration: BoxDecoration(
             color: color,
@@ -60,6 +61,7 @@ class SecondButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
+      borderRadius: BorderRadius.circular(30),
       child: Container(
         width: width,
         height: 60,
