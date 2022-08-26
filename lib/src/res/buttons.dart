@@ -1,3 +1,4 @@
+import 'package:cat_facts_randomizer/src/res/app_colors.dart';
 import 'package:cat_facts_randomizer/src/res/text_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -67,7 +68,7 @@ class SecondButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(30),
             border: Border.all(
               style: BorderStyle.solid,
-              color: Colors.white,
+              color: AppColors.white,
               width: 1.0,
             )),
         child: Icon(

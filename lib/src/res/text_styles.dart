@@ -7,6 +7,13 @@ class TextStyles {
     fontFamily: 'Poppins',
   );
 
+  static const forDate = TextStyle(
+    fontSize: 8,
+    fontFamily: 'Poppins',
+      fontWeight: FontWeight.bold,
+      letterSpacing: 1
+  );
+
   static const forFacts = TextStyle(
     fontSize: 13,
     fontFamily: 'Poppins',

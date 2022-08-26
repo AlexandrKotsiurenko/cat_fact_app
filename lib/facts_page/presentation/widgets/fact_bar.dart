@@ -20,7 +20,11 @@ class FactBar extends StatelessWidget {
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
                   children: [
-                    Text(TimeUtil.getFullDate(state.catInfo!.factDate)),
+                    Text(
+                      TimeUtil.getFullDate(state.catInfo!.factDate),
+                      style: TextStyles.forDate,
+                    ),
+                    const SizedBox(height: 10),
                     Text(
                       state.catInfo!.catFact.fact!,
                       style: TextStyles.forFacts,

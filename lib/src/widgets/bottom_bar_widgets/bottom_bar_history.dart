@@ -14,8 +14,9 @@ class BottomBarHistory extends StatelessWidget {
         horizontal: 10,
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          MainButton(width: 260, onTap: () {}, info: 'by Alexandr Kotsiurenko'),
           SecondButton(
             width: 60,
             onTap: () {
