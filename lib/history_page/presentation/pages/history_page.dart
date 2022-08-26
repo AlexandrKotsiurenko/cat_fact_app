@@ -1,5 +1,6 @@
 import 'package:cat_facts_randomizer/facts_page/domain/network/cat_info.dart';
 import 'package:cat_facts_randomizer/src/res/app_colors.dart';
+import 'package:cat_facts_randomizer/src/res/consts.dart';
 import 'package:cat_facts_randomizer/src/res/text_styles.dart';
 import 'package:cat_facts_randomizer/src/res/time_util.dart';
 import 'package:cat_facts_randomizer/src/widgets/bottom_bar_widgets/bottom_bar_history.dart';
@@ -11,7 +12,7 @@ class HistoryPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<CatInfo> catsInfo = Hive.box<CatInfo>('catInfo').values.toList();
+    List<CatInfo> catsInfo = Hive.box<CatInfo>(HiveBoxNames.catInfo).values.toList();
     return Scaffold(
       backgroundColor: AppColors.secondDark,
       body: Center(

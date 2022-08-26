@@ -1,5 +1,6 @@
 import 'package:cat_facts_randomizer/facts_page/presentation/bloc/cat_bloc.dart';
 import 'package:cat_facts_randomizer/facts_page/presentation/bloc/cat_state.dart';
+import 'package:cat_facts_randomizer/src/res/consts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -15,7 +16,7 @@ class ImageBar extends StatelessWidget {
         child: state.catInfo == null
             ? const CircularProgressIndicator()
             : Image.network(
-                'https://cataas.com' + state.catInfo!.catImage.url!,
+                ApiUrls.catImageUrl + state.catInfo!.catImage.url!,
                 fit: BoxFit.cover,
                 loadingBuilder: (BuildContext context, Widget child,
                     ImageChunkEvent? loadingProgress) {

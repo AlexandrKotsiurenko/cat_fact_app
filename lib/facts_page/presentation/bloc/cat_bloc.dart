@@ -2,6 +2,7 @@ import 'package:cat_facts_randomizer/facts_page/domain/network/cat_info.dart';
 import 'package:cat_facts_randomizer/facts_page/domain/network/rest_client.dart';
 import 'package:cat_facts_randomizer/facts_page/presentation/bloc/cat_events.dart';
 import 'package:cat_facts_randomizer/facts_page/presentation/bloc/cat_state.dart';
+import 'package:cat_facts_randomizer/src/res/consts.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive/hive.dart';
 
@@ -17,7 +18,7 @@ class CatBloc extends Bloc<CatEvents, CatState> {
           catFact: fact,
           factDate: DateTime.now(),
         );
-        Hive.box<CatInfo>('catInfo').add(catInfo);
+        Hive.box<CatInfo>(HiveBoxNames.catInfo).add(catInfo);
         emit(
           CatState(catInfo: catInfo),
         );

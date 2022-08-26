@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import '../../../src/res/text_styles.dart';
 
 class QuestionBar extends StatelessWidget {
+  static const String _dividerText = "DID YOU KNOW WHAT?";
+
   const QuestionBar({Key? key}) : super(key: key);
 
   @override
@@ -16,7 +18,7 @@ class QuestionBar extends StatelessWidget {
       ),
       child: const Center(
         child: Text(
-          "DID YOU KNOW WHAT?",
+          _dividerText,
           style: TextStyles.forButtons,
         ),
       ),
