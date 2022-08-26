@@ -14,7 +14,7 @@ class ImageBar extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height / 2,
         child: state.catInfo == null
-            ? const CircularProgressIndicator()
+            ? Center(child: const CircularProgressIndicator())
             : Image.network(
                 ApiUrls.catImageUrl + state.catInfo!.catImage.url!,
                 fit: BoxFit.cover,

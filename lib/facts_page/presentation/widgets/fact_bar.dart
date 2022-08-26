@@ -14,7 +14,7 @@ class FactBar extends StatelessWidget {
       builder: (context, state) => SizedBox(
         width: MediaQuery.of(context).size.width,
         child: state.catInfo == null
-            ? const CircularProgressIndicator()
+            ? Center(child: const CircularProgressIndicator())
             : Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
